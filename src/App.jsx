@@ -11,7 +11,7 @@ function App() {
 			</div>
 			<div className="tareas-lista-principal">
 				<h1>Mis Tareas</h1>
-				<Tarea texto={"Aprender React"} />
+				<Tarea texto={"Aprender React"} completada={false} />
 			</div>
 		</div>
 	);
