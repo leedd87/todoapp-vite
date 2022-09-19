@@ -1,8 +1,6 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Tarea from "./components/Tarea";
-import TareaFormulario from "./components/TareaFormulario";
+import ListaDeTareas from "./components/ListaDeTareas";
 
 function App() {
 	return (
@@ -12,8 +10,7 @@ function App() {
 			</div>
 			<div className="tareas-lista-principal">
 				<h1>Mis Tareas</h1>
-				<Tarea texto={"Aprender React"} completada={false} />
-				<TareaFormulario />
+				<ListaDeTareas />
 			</div>
 		</div>
 	);
