@@ -20,6 +20,7 @@ const TareaFormulario = ({ onSubmit }) => {
 		};
 
 		onSubmit(tareaNueva);
+		setInput("");
 	};
 
 	return (
@@ -30,6 +31,7 @@ const TareaFormulario = ({ onSubmit }) => {
 				placeholder="Escribe una Tarea"
 				name="texto"
 				onChange={manejarCambio}
+				value={input}
 			/>
 			<button className="tarea-boton">Agregar Tarea</button>
 		</form>
