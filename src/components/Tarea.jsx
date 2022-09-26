@@ -5,7 +5,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 const Tarea = ({ id, texto, completada, completarTarea, eliminarTarea }) => {
 	console.log("Hello");
 	console.log("Agregar LocalStorage");
-	console.log("estudiar");
+
 	return (
 		<div
 			className={
