@@ -11,6 +11,10 @@ const ListaDeTareas = () => {
 			tarea.texto = tarea.texto.trim();
 			const tareasActualizadas = [tarea, ...tareas]; //agrega la nueva tarea + agrega las anteriores
 			setTareas(tareasActualizadas); //setea y muestra todas las tareas nuevas
+			console.log(tareasActualizadas);
+
+			const tareasActualizadasJSON = JSON.stringify(tareasActualizadas);
+			console.log(tareasActualizadasJSON);
 		}
 	};
 

@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid"; //npm de ids unicos
 
 const TareaFormulario = ({ onSubmit }) => {
 	const [input, setInput] = useState("");
-	// const [tareas, setTareas] = useState([]);
 
 	const manejarCambio = (e) => {
 		setInput(e.target.value);
@@ -12,7 +11,6 @@ const TareaFormulario = ({ onSubmit }) => {
 
 	const manejarEnvio = (e) => {
 		e.preventDefault();
-		console.log("Enviando formulario");
 
 		const tareaNueva = {
 			id: uuidv4(),
@@ -21,12 +19,6 @@ const TareaFormulario = ({ onSubmit }) => {
 		};
 
 		onSubmit(tareaNueva);
-		console.log(tareaNueva);
-
-		const tareaNuevaJSON = JSON.stringify(tareaNueva);
-		console.log(tareaNuevaJSON);
-
-		localStorage.setItem("tarea", tareaNuevaJSON);
 
 		setInput("");
 	};
